@@ -1,0 +1,104 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  
+ 
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  .nav-link {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .flex-container > div {
+    background-color: white;
+    width: 200px;
+    /* margin: 300px; */
+    text-align: center;
+    line-height: 400px;
+    font-size: 14px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 20px;
+  }
+  
+  #header-img {
+    top: 0;
+    width: 500px;
+  }
+  
+
+  #pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #pricing .card {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    max-width: 340px;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+  }
+  #pricing .card h2 {
+    background-color: #1b69b1b3;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  
+  #pricing .card strong {
+    font-size: 24px;
+  }
+  
+  #pricing .card button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #1eb14f;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  @media (min-width: 800px) {
+    #pricing {
+      flex-direction: row;
+      align-self: center;
+    }
+  
+    #pricing .card:not(last-child) {
+      margin-right: 15px;
+    }
+  }
+  
+  
