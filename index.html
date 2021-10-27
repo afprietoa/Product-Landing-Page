@@ -1,105 +1,110 @@
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="./style/style.css">
-    <style>
-      @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
-        [class*="col-"] {
-          width: 100%;
-        }
-      }
+<!DOCTYPE html>
+<html lang="en">
 
-      .flex-container {
-        display: flex;
-        justify-content: center;
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Product Landing Page</title>
+</head>
 
-  <body>
-    <header id="header">
-      <center>
-        <img id="header-img" src="./images/Logo.png"/>
-        <nav id="nav-bar">
-          <a class="nav-link" href="#inicio">Inicio</a>
-          <a class="nav-link" href="#proyectos">Proyectos</a>
-          <a class="nav-link" href="#sala de ventas">Sala de ventas</a>
-        </nav>
-      </center>
+<body>
+
+  <div class="container">
+    <header id="header" class="container_header">
+      <img src="./images/en.png" alt="logo" id="header-img" class="header__img">
+      <nav id="nav-bar" class="nav-bar">
+        <a href="#vocabulary_grammar" class="nav-link">Vocabulary / Grammar</a>
+        <a href="#video_zone" class="nav-link">Video Zone</a>
+        <a href="#skills" class="nav-link">Skills</a>
+      </nav>
     </header>
-    <section id="inicio">
-      <center>
-        <h1>Viviendas universitarias</h1>
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/yNa2YivzW00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </center>
-    </section>
-    <section id="proyectos">
-      <center>
-        <h2>Conoce mas proyectos de vivienda</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input id="email" type="email" placeholder="E-Mail" name="email"></input>
-          <input id="submit" type="submit"></input>
-        </form>
-      </center>
+
+    <div class="main-image"></div>
+
+    <section id="vocabulary_grammar" class="sect-1">
+      <h2>Vocabulary and Grammar</h2>
+      <h4>learn new words to improve your vocabulary to help you communicate well in English.</h4>
+
+      <div class="cards">
+
+        <div class="card">
+          <img src="./images/enImg1.png" alt="beginner">
+          <h4>Beginner</h4>
+          <p>Are you a beginner (CEFR level A1) or pre-intermediate (CEFR level A2) learn of English?</p>
+        </div>
+        <div class="card">
+          <img src="./images/enImg2.png" alt="intermediate">
+          <h4>Intermediate</h4>
+          <p>Are you a beginner (CEFR level B1) or pre-intermediate (CEFR level B2) learn of English?</p>
+        </div>
+        <div class="card">
+          <img src="./images/enImg3.png" alt="advanced">
+          <h4>Advanced</h4>
+          <p>Are you a beginner (CEFR level C1) or pre-intermediate (CEFR level C2) learn of English?</p>
+        </div>
+
+      </div>
+
     </section>
 
-    <section id="sala de ventas">
+    <section id="video_zone" class="sect-2">
 
-    <div id="pricing">
+      <h2>Video Zone</h2>
+      <iframe 
+      id="video"
+      class="video" 
+      width="100%" 
+      height="100%" 
+      src="https://www.youtube.com/embed/mKG-PEVYOR8" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
       
-        <div class="card ">
-         <h2>Alameda</h2>
-         <strong>$100.000.000</strong>
-         <p>Lorem ipsum.</p>
-         <p>Lorem ipsum.</p>
-         <p>Lorem ipsum dolor.</p>
-         <p>Lorem ipsum.</p>
-         <button>Mas información</button>
-       </div>
-    
-    
-    
-       <div class="card ">
-         <h2>Ciudadela</h2>
-         <strong>$150.000.000</strong>
-         <p>Lorem ipsum.</p>
-         <p>Lorem ipsum.</p>
-         <p>Lorem ipsum dolor.</p>
-         <p>Lorem ipsum.</p>
-         <button>Mas información</button>
-       </div>
-     
+    </section>
 
-      
-       <div class="card ">
-         <h2>Castilla</h2>
-         <strong>$200.000.000</strong>
-         <p>Lorem ipsum.</p>
-         <p>Lorem ipsum.</p>
-         <p>Lorem ipsum dolor.</p>
-         <p>Lorem ipsum.</p>
-         <button>Mas información</button>
-       </div>
-    
+    <section id="skills" class="sect-3">
 
-    </div>
+      <h2>Skills</h2>
+      <h4>Practice your reading, writting, listening and speaking skills at your level.</h4>
+
+      <div class="cards">
+
+        <div class="card">
+          <img src="./images/brIm1.jpg" alt="listening">
+          <h4>Listening</h4>
+        </div>
+        <div class="card">
+          <img src="./images/brIm3.jpg" alt="reading">
+          <h4>Reading</h4>
+        </div>
+        <div class="card">
+          <img src="./images/brIm2.jpg" alt="writting">
+          <h4>Writting</h4>
+        </div>
+        <div class="card">
+          <img src="./images/brIm4.jpg" alt="speaking">
+          <h4>Speaking</h4>
+        </div>
+
+      </div>
 
     </section>
 
-  </body>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  <script>
-    window.onscroll = function() {myFunction()};
+    <form action="" id="form" class="form">
+      <input type="email" name="email" id="email" class="email" placeholder="Yor email address">
+      <input type="submit" id="submit" class="submit" value="Subscribe">
+    </form>
 
-    var header = document.getElementById("header");
-    var sticky = header.offsetTop;
+    <footer>
+      <p>all right reserved © copyright - Academia Geek 2021</p>
+    </footer>
 
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-  </script>
+  </div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
 </html>
