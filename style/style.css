@@ -32,7 +32,7 @@
   align-items: center;
   top: 0;
   width: 100vw;
-  background: rgba(85, 85, 85, 0.3);
+  background: #8c52ff;
   
 }
 .header__img{
@@ -42,7 +42,7 @@
 .container_header .nav-bar .nav-link{
   text-transform: uppercase;
   text-decoration: none;
-  color: inherit;
+  color: #fff;
   transition: color 0.2s ease-out;
 }
 .container_header .header__img{
@@ -50,9 +50,10 @@
 }
 .nav-bar .nav-link{
   margin-right:100px;
+  
 }
 .container_header .nav-bar .nav-link:hover{
-  color: var(--secondary);
+  color: #5e17eb;
   font-weight: bold;
 }
 .container_header .nav-bar .nav-link:not(:last-child){
